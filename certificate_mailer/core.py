@@ -3,6 +3,7 @@ from . import helpers
 from . import mailer_utils
 import csv
 import os
+import re
 import json
 import cv2
 import getpass
@@ -18,7 +19,7 @@ __all__ = ['CsvDataIterator', 'create_certificate','create_n_mail_certificates']
 class CsvDataIterator:
     def __init__(self, f_name):
         self.csv_file_name = f_name
-    
+
     def __iter__(self):
         return self.CsvIterator(self.csv_file_name)
 
@@ -47,10 +48,10 @@ class CsvDataIterator:
                 raise e
             except :
                 raise
-            
+
         def __iter__(self):
             return self
-        
+
         def __next__(self):
             if self.num_data >= self.data_length:
                 raise StopIteration
@@ -59,8 +60,7 @@ class CsvDataIterator:
                 self.num_data += 1
                 return data
 
-        def is_header_valid(self):
-            
+        def is_header_valid(self):            
             if ('name' in self.csv_header) and ('score' in self.csv_header) and ('email' in self.csv_header):
                 return True
             else:
@@ -70,7 +70,6 @@ class CsvDataIterator:
                 print('Header must have fields \'name\',\'score\' and \'email\'. Lower, upper or mixed case is allowed.')
                 print('Please refer to README.md for more details on allowed Header format.')
                 return False
-
 
 @helpers.log_decorator('certificate_mailer.log')
 def create_certificate(student_name,course_name,sign_name,certi_template = None,certi_path='.certificates',overwrite=False):
@@ -108,7 +107,7 @@ def create_certificate(student_name,course_name,sign_name,certi_template = None,
         font = cv2.FONT_HERSHEY_SCRIPT_COMPLEX
         # Black color in BGR
         color = (0, 0, 0)
-        
+
         y_offset = 5
 
         # Write Course name
@@ -122,13 +121,13 @@ def create_certificate(student_name,course_name,sign_name,certi_template = None,
 
         # first calculate height and width of the text
         (txt_width,_),_ = cv2.getTextSize(course_name,font,course_name_scale,course_name_thickness)
-    
+
         course_name_coords = (int(course_name_x_start +((course_name_x_end-course_name_x_start)/2 - txt_width/2)),course_name_y - y_offset)
-    
+
         certi_img = cv2.putText(certi_img, course_name, course_name_coords, font,course_name_scale, color, course_name_thickness, cv2.LINE_AA)
-        
+
         # Write Student name
-        
+
         student_name_x_start = field_coords["student_name_start"][0]
         student_name_x_end = field_coords["student_name_end"][0]
         student_name_y = field_coords["student_name_start"][1]
@@ -140,11 +139,11 @@ def create_certificate(student_name,course_name,sign_name,certi_template = None,
         # calculate text coordinates to align text center with field center
         student_name_coords = (int(student_name_x_start +((student_name_x_end-student_name_x_start)/2 - txt_width/2)),student_name_y - y_offset)
         certi_img = cv2.putText(certi_img, student_name, student_name_coords, font,student_name_scale, color, student_name_thickness, cv2.LINE_AA)
-        
+
 
         # Write Date    
         date_text = datetime.now().strftime("%d %B %Y")
-        
+
         # We need to put the text at exact center 
 
         date_text_x_start = field_coords["date_start"][0]
@@ -159,9 +158,9 @@ def create_certificate(student_name,course_name,sign_name,certi_template = None,
         date_text_coords = (int(date_text_x_start +((date_text_x_end-date_text_x_start)/2 - txt_width/2)),date_text_y - y_offset)
         # Write text into image
         certi_img = cv2.putText(certi_img, date_text, date_text_coords, font,date_text_scale, color, date_text_thickness, cv2.LINE_AA)
-        
+
         # Write Sign name
-       
+
         sign_name_x_start = field_coords["sign_start"][0]
         sign_name_x_end = field_coords["sign_start"][0]
         sign_name_y = field_coords["sign_end"][1]
@@ -190,7 +189,34 @@ def _map_func_create_n_mail_certi(xx,tuple_type,course_name,sign_name,total_mark
             student = tuple_type(*map(lambda x:x.strip(),xx))
             print('-'*30)
             print(f'Student: Name:{student.name}\t Score:{student.score}\tEmail:{student.email}')
-            
+            print("here")
+            # student data checks
+            # Name : Special characters
+            if(len(re.findall("[@_!#$%^&*()<>?/\|}{~:]", student.name)) > 0):
+                print("Special characters are not allowed in student name")
+                return
+
+            # Name : check numeric characters
+            if(len(re.findall("[0-9]", student.name)) > 0):
+                print("Numeric characters are not allowed in student name")
+                return
+
+            # Score: must be numeric
+            if (not student.score.isnumeric()):
+                print("Student score must be numeric value")
+                return
+
+            # Score: Not more than Total marks
+            if (float(student.score) > total_marks):
+                print("Student score cannot be more than Total score")
+                return
+
+            # Email id
+            if not mailer_utils.is_email_valid(student.email):
+                print("Email id is invalid")
+                return
+
+            print('Creating Certificate')
             certificate_path = create_certificate(student_name = student.name, course_name = course_name,
                                 sign_name = sign_name,certi_template=certi_template,
                                 certi_path=certi_path,overwrite=overwrite)
@@ -226,9 +252,37 @@ Regards
 def create_n_mail_certificates(csv_file_name,course_name,sign_name,total_marks,sender_email,
                 mail_interval=2,certi_template = None,
                 certi_path='./certificates',overwrite=False,create_certi_only=False,verbose=False):
-    
+
+    # Perform checks
+
+    # sender mail
+    if not mailer_utils.is_email_valid(sender_email):
+        print("Sender email id is not valid!!!")
+        return False
+
+    # sender mail only gmail allowed
+    if "@gmail." not in sender_email:
+        print("Sorry!!! We support mail sending through gmail only.")
+        return False
+
+    # sign name : check special characters
+    if(len(re.findall("[@_!#$%^&*()<>?/\|}{~:]", sign_name)) > 0):
+        print("Special characters are not allowed in sign name")
+        return False
+
+    # sign name : check numeric characters
+    if(len(re.findall("[0-9]", sign_name)) > 0):
+        print("Numeric characters are not allowed in sign name")
+        return False
+
+    # total marks should not be negative or 0
+    if(total_marks <= 0):
+        print("Total marks should be nonzero positive number")
+        return False
+
     if certi_template == None: 
         certi_template= os.path.join(os.path.dirname(__file__), 'data/certi_template.jpg')
+
     try:
         csv_obj = CsvDataIterator(csv_file_name)
         csv_iter = iter(csv_obj)
@@ -254,9 +308,9 @@ def create_n_mail_certificates(csv_file_name,course_name,sign_name,total_marks,s
         print("Failed!!! File not found")         
         return False      
     except TypeError as e:
+        print(e)
         print("Failed!!! Invalid Data. Possibly number of fields in data and header don't match")     
     except Exception as e:
-        print("Failed!!! ",e)
+        print("Failed!!! ")
+        print(e)
         return False
-
-

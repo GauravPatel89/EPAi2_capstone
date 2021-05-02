@@ -5,7 +5,7 @@ def main(args):
     try:
         if args.verbose:
             print('Arguments passed',args)
-    
+
         if certificate_mailer.create_n_mail_certificates(
             csv_file_name = args.csv_file,course_name = args.course_name,
             sign_name = args.sign_name, total_marks = args.total_marks,
@@ -20,7 +20,8 @@ def main(args):
             print('Failed!!!')
     except Exception as e:
         print(e)
-        print('Failed')
+        print('-'*30)
+        print('Failed!!!')
 
 
 if __name__ == "__main__":
@@ -40,18 +41,15 @@ if __name__ == "__main__":
 
     parser.add_argument("-t","--certi_template",type=str,default='./certificate_mailer/data/certi_template.jpg',help="Path where created certificates will be saved. (Default: %(default)r)")    
 
-    parser.add_argument("-p","--certi_path",type=str,default='./certificates',help="Path where created certificates will be saved. (Default: %(default)r)")    
-    
+    parser.add_argument("-p","--certi_path",type=str,default='./certificates',help="Path where created certificates will be saved. (Default: %(default)r)")
+
     parser.add_argument("-i","--interval",type=float,default=2,help="Time interval(seconds) between consecutive mails. (Default: %(default)r)")
-    
+
     parser.add_argument("-o","--overwrite",action="store_true",default=False,help="Whether to overwrite generated certificates if already exist. (Default: %(default)r)")
-    
+
     parser.add_argument("-v", "--verbose", action="store_true", default=False,help= "Whether vebose message are required. (Default: %(default)r)")
-    
+
     parser.add_argument("-c","--create_certificates_only",action="store_true",default=False,help="Only create certificates don't send. (Default: %(default)r)")
-    
+
     args = parser.parse_args()
     main(args)
-
-
-

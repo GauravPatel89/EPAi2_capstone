@@ -5,11 +5,23 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import ntpath
 import os
+import re
+
 from . import helpers
 
 
-__all__ = ['send_mail_with_attachment','send_mail']
 
+__all__ = ['send_mail_with_attachment','send_mail','is_email_valid']
+
+ 
+def is_email_valid(email):
+ 
+    regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
+
+    if(re.search(regex, email)):
+        return True
+    else:
+        return False
 
 
 @helpers.internet_check_decorator()
@@ -64,7 +76,6 @@ def send_mail_with_attachment(subject,body,receiver_email,sender_email,password,
 @helpers.internet_check_decorator()
 @helpers.log_decorator('certificate_mailer.log')
 def send_mail(subject,body,receiver_email,sender_email,password):
-    
     try:
         message = f"""\
     Subject: {subject}

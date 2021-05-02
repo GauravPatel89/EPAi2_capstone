@@ -3,87 +3,48 @@ import csv
 from faker import Faker
 import random
 import json
+import re
+from pathlib import Path
+import glob
 
-template = {
-    "course_name_start" : (332,306),
-    "course_name_end" : (712,306),
-    "student_name_start" : (345,450),
-    "student_name_end" : (685,450),
-    "date_start" : (196,532),
-    "date_end" : (422,532),
-    "sign_start" : (626,532),
-    "sign_end" : (854,532),
-}
+def test_student_score_not_more_than_total():
 
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["name","score","email"])
+        writer.writerow(["gaurav patel","4500","gaurav4664@gmail.com"])
+        writer.writerow(["varuag letap","6000","gaurav4664@gmail.com"])
 
-# def generate_data(n):
-#     with open('large_data.csv',"w") as f:
-#         writer = csv.writer(f)
-#         writer.writerow(["name","score","email"])
-#         fake = Faker()
-#         for i in range(n):
-#             fake_profile = fake.profile()
-#             writer.writerow([fake_profile['name'],str(random.randint(100,1000)),fake_profile['mail']])
+    certi_path = "test_certificates"
 
+    # remove directory if already exists. The app will create the directory and put certificates there.
+    dirpath = Path('.', certi_path)
+    if dirpath.exists() and dirpath.is_dir():
+        shutil.rmtree(dirpath)
 
-# generate_data(5)
-# def internetOnOrNot():
-#     def dec(fn):
-#         def inner(*args, **kwargs):
-#             return fn(*args, **kwargs)
-#         return inner
-        
-#     if (certificate_mailer.is_internet_connected()):
-#         return dec
-#     else:
-#         print("Not connected to Internet!!! Please connect to network...")
-#         raise Exception("Disconnected from Network!!!")
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
+    sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
+    certi_path=certi_path,overwrite=False,create_certi_only=True,verbose=False)
 
-# @internetOnOrNot()
-# def hello_world(n):
-#     for i in range(n):
-#         print(i,"Hello World")    
-#     return True
+    # Only one certificate should be created
+    assert len(glob.glob("./"+certi_path+"/*.jpg"))==1, f"App should reject student with score more than total score."
 
-# hello_world(5)
-# import logging
+test_student_score_not_more_than_total()
 
-# def setup_logging(name="logger",filepath=None,stream_log_level="DEBUG",file_log_level="DEBUG"):
-    
-#     logger = logging.getLogger(name)
-#     logger.setLevel("DEBUG")
-#     formatter = logging.Formatter(
-#         '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-#     )    
-    
-#     if filepath is not None:
-#         fh = logging.FileHandler(filepath)
-#         fh.setLevel(getattr(logging, file_log_level))
-#         fh.setFormatter(formatter)
-#         logger.addHandler(fh)    
-#         return logger
-        
+# def test_indentations(filename):
+#     ''' Returns pass if used four spaces for each level of syntactically \
+#     significant indenting.'''
+#     # list all the files is current directory
+#     # files = glob.glob("./" + '/**/*.py', recursive=True)
+#     # Now for each of the files check if line starts with 'for' or 'while' and ends with ':'.
+#     # for f in files:
+#     #     if f.find('test') == -1:
+#     with open(filename) as fid:
+#         contents = fid.read()
+#         spaces = re.findall('\n +.', contents)
+#         for i,space in enumerate(spaces):
+#             print(i,space,len(space))
+#             assert len(space) % 4 == 2, f"Your script contains misplaced indentations{space}"
+#             assert len(re.sub(r'[^ ]', '', space)) % 4 == 0, "Your code indentation does not follow PEP8 guidelines"
 
-# def log_decorator(log_name):
-#     def log_this(function):
-#         logger = setup_logging(log_name,'logger.log')
-#         def new_function(*args,**kwargs):
-#             logger.debug(f"{function.__name__} - {args} - {kwargs}")
-#             try:
-#                 output = function(*args,**kwargs)
-#                 logger.debug(f"{function.__name__} returned: {output}")
-#                 return output
-#             except Exception as e:
-#                 logger.exception(f"{function.__name__}: Exception:{e}")
-#                 raise e
-#         return new_function
-#     return log_this        
-
-# @log_decorator('test_logging')
-# def hello_world(n):
-#     for i in range(n):
-#         print(i,"Hello World")    
-#     raise RuntimeError
-#     return True
-
-# hello_world(5)    
+# test_indentations('./certificate_mailer/tests/test_automated.py')

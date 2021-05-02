@@ -16,7 +16,6 @@ class PasswordHelper:
 
 def log_to_file(file_name,msg):
     date_time_str = datetime.now().strftime("[%d/%m/%Y, %H:%M:%S.%f] ")
-    
     with open(file_name,mode="a+") as fid:
         fid.write("\n" + date_time_str + msg+"\n")
 
@@ -33,7 +32,7 @@ def log_decorator(log_file_name='default.log'):
                 log_to_file(log_file_name,f"ERROR: {function.__name__}: Exception:{e}")
                 raise e
         return new_function
-    return log_this        
+    return log_this
 
 
 def is_internet_connected():
@@ -62,4 +61,3 @@ def internet_check_decorator():
     else:
         print("Not connected to Internet!!! Please connect to network...")
         return dec_failure
-
