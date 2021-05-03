@@ -58,13 +58,13 @@ It can be used as follow.
   ![certificate_sender_app_gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/assets/certi_sender_app.gif)
 
 
-- User Defined templates:  
+##### User Defined templates:  
 
- This repo comes with a default certificate template [certi_template.jpg](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.jpg). If user needs to use some other certificate template, she needs to provide a json file containing coordinates of different certificate fields. User can manually create this json file as shown in [certi_template.json](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.json) default template file. 
+  This repo comes with a default certificate template [certi_template.jpg](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.jpg). If user needs to use some other certificate template, she needs to provide a json file containing coordinates of different certificate fields. User can manually create this json file as shown in [certi_template.json](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.json) default template file.
 
- User can use use template_helper to generate template json file.
+  User can use use template_helper to generate template json file.
 
- Call template_helper
+  Call template_helper
 
       python template_helper.py "template_file.jpg"      
       
