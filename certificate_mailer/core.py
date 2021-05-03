@@ -117,7 +117,7 @@ class CsvDataIterator:
                         raise Exception("Invalid Header!!!")
                     self.csv_data = list(csv_reader)
                 self.data_length = len(self.csv_data)
-                print('Data Length:',self.data_length)
+                #print('Data Length:',self.data_length)
                 if self.data_length <= 0:
                     # There no data only header
                     print("There is no data in the file!!!")
@@ -295,8 +295,8 @@ def create_certificate(student_name:'(str) Name of the student',
         # Write Sign name
         # Get sign name coordinates
         sign_name_x_start = field_coords["sign_start"][0]
-        sign_name_x_end = field_coords["sign_start"][0]
-        sign_name_y = field_coords["sign_end"][1]
+        sign_name_x_end = field_coords["sign_end"][0]
+        sign_name_y = field_coords["date_start"][1]
         # Set sign name scale and thickness
         sign_name_scale = 1
         sign_name_thickness = 1
@@ -371,7 +371,7 @@ def _map_func_create_n_mail_certi(xx:'(list)Student data',
             student = tuple_type(*map(lambda x:x.strip(),xx))
             print('-'*30)
             print(f'Student: Name:{student.name}\t Score:{student.score}\tEmail:{student.email}')
-            print("here")
+
             # student data checks
             # Name : Cannot have Special characters
             if(len(re.findall("[@_!#$%^&*()<>?/\|}{~:]", student.name)) > 0):
@@ -447,7 +447,7 @@ def mail_the_certificate(student_name:'(str)Student name',
     subject = f"Course completion certificate: {course_name}"
     body = f"""\
 Dear {student_name},
-Congratulations! You have cleared the {course_name} with {student_score} marks out of {total_marks}!
+Congratulations! You have cleared the {course_name} with {student_score} marks out of {total_marks}! 
 We are excited to share the attached Award of Excellence for your performance!
 Regards
 {sign_name}"""
@@ -462,15 +462,15 @@ Regards
 def create_n_mail_certificates(csv_file_name:'(str)csv student data file',
                                 course_name:'(str)Course name',
                                 sign_name:'(str)Signature name',
-                                total_marks:'(str)Total marks in the course',
+                                total_marks:'(float)Total marks in the course',
                                 sender_email:'(str)Sender email id',
                                 mail_interval:'(int)Time interval in seconds between consecutive emails'=2,
                                 certi_template:'(str)Certificate template file' = None,
                                 certi_dir:'(str)Directory to which created certificates must be saved'='./certificates',
                                 out_format:'(str)Certificate file format'='jpg',
                                 overwrite:'(bool)Whether to overwrite certificate files'=False,
-                                create_certi_only:'(str)Only create certificates dont mail'=False,
-                                verbose:'(str)Verbose messages'=False):
+                                create_certi_only:'(bool)Only create certificates dont mail'=False,
+                                verbose:'(bool)Verbose messages'=False):
     """
     This function, for given student data in xx, creates certificate and mails it.
 
@@ -485,8 +485,8 @@ def create_n_mail_certificates(csv_file_name:'(str)csv student data file',
         certi_dir(str):Directory to which created certificates must be saved
         out_format(str):Certificate file format
         overwrite(bool):Whether to overwrite certificate files
-        create_certi_only(str):Only create certificates dont mail
-        verbose(str):Verbose messages
+        create_certi_only(bool):Only create certificates dont mail
+        verbose(bool):Verbose messages
     Returns:
         success(bool): Whether certificates to all the students were successfully sent
     """
@@ -570,12 +570,14 @@ def create_n_mail_certificates(csv_file_name:'(str)csv student data file',
             return False 
     except StopIteration as e:
         print("Failed!!! Possibly Empty or invalid data file")
+        return False
     except FileNotFoundError as e:
         print("Failed!!! File not found")         
         return False      
     except TypeError as e:
         print(e)
-        print("Failed!!! Invalid Data. Possibly number of fields in data and header don't match")     
+        print("Failed!!! Invalid Data. Possibly number of fields in data and header don't match")   
+        return False  
     except Exception as e:
         print("Failed!!! ")
         print(e)

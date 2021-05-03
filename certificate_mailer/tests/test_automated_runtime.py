@@ -18,40 +18,66 @@ from faker import Faker
 
 # Test whether app rejects data file without header.
 def test_reject_data_file_without_header():
-    result = certificate_mailer.create_n_mail_certificates(csv_file_name='.data/test_data_no_header.csv',course_name="EPAi2",
+
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["gaurav patel","4500","gaurav4664@gmail.com"])
+
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
     sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
-    certi_dir='./certificates',overwrite=False,create_certi_only=False,verbose=False)
+    certi_dir='./certificates',overwrite=False,create_certi_only=True,verbose=False)
     assert result==False,"Application should fail if data file doesn't have a header"
 
 # Test whether app rejects data file with invalid header. Invalid header means minimum required 
 # fields (name,score,email) not found 
 def test_reject_data_file_invalid_header():
-    result = certificate_mailer.create_n_mail_certificates(csv_file_name='.data/test_data_invalid_header.csv',course_name="EPAi2",
+
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["name","score"])
+        writer.writerow(["gaurav patel","4500","gaurav4664@gmail.com"])
+
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
     sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
-    certi_dir='./certificates',overwrite=False,create_certi_only=False,verbose=False)
+    certi_dir='./certificates',overwrite=False,create_certi_only=True,verbose=False)
     assert result==False,"Application should fail if data file doesn't have a header"
 
 # Test whether app rejects empty data file.
 def test_reject_empty_data_file():
-    result = certificate_mailer.create_n_mail_certificates(csv_file_name='.data/test_data_empty.csv',course_name="EPAi2",
+
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
     sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
-    certi_dir='./certificates',overwrite=False,create_certi_only=False,verbose=False)
+    certi_dir='./certificates',overwrite=False,create_certi_only=True,verbose=False)
     assert result==False,"Application should fail if data file doesn't have a header"
 
 # Test whether app rejects data file with only header and no data.
 def test_reject_invalid_data_file():
-    result = certificate_mailer.create_n_mail_certificates(csv_file_name='.data/test_data_only_header_no_data.csv',course_name="EPAi2",
+
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["name","score","email"])
+
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
     sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
-    certi_dir='./certificates',overwrite=False,create_certi_only=False,verbose=False)
+    certi_dir='./certificates',overwrite=False,create_certi_only=True,verbose=False)
     assert result==False,"Application should fail if data file doesn't have a header"
 
 
 # Test whether app rejects invalid data. Invalid data could be more data on certain rows 
 # than the header mentions.
 def test_reject_invalid_data_file():
-    result = certificate_mailer.create_n_mail_certificates(csv_file_name='.data/test_data_invalid_data.csv',course_name="EPAi2",
+
+    with open('temp_data.csv',"w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["name","score","email"])
+        writer.writerow(["gaurav patel","4500","gaurav4664@gmail.com","12345678"])
+
+    result = certificate_mailer.create_n_mail_certificates(csv_file_name='temp_data.csv',course_name="EPAi2",
     sign_name= "Rohan Shravan",total_marks=5000,sender_email="gaurav4664.test@gmail.com",mail_interval=2,
-    certi_dir='./certificates',overwrite=False,create_certi_only=False,verbose=False)
+    certi_dir='./certificates',overwrite=False,create_certi_only=True,verbose=False)
     assert result==False,"Application should fail if data file doesn't have a header"
 
 def test_certificate_directory_created():
