@@ -481,7 +481,7 @@ def test_total_marks_positive_check():
 
 def test_pdf_output_format():
 
-    csv_file_name = "test_data.csv"
+    csv_file_name = "certificate_mailer/data/test_data.csv"
     certi_dir = "test_certificates"
     sign_name = "Rohan Shravan"
     course_name = "EPAi2"
@@ -498,11 +498,11 @@ def test_pdf_output_format():
     sign_name= sign_name,total_marks=total_marks,sender_email=sender_email,mail_interval=2,
     certi_dir=certi_dir,out_format=out_format,overwrite=False,create_certi_only=True,verbose=False)
 
-    assert len(glob.glob("./"+certi_dir+"/*."+out_format))==1, "App should have generated .pdf certificate"
+    assert len(glob.glob("./"+certi_dir+"/*."+out_format))>0, "App should have generated .pdf certificate"
 
 def test_png_output_format():
 
-    csv_file_name = "test_data.csv"
+    csv_file_name = "certificate_mailer/data/test_data.csv"
     certi_dir = "test_certificates"
     sign_name = "Rohan Shravan"
     course_name = "EPAi2"
@@ -519,11 +519,11 @@ def test_png_output_format():
     sign_name= sign_name,total_marks=total_marks,sender_email=sender_email,mail_interval=2,
     certi_dir=certi_dir,out_format=out_format,overwrite=False,create_certi_only=True,verbose=False)
 
-    assert len(glob.glob("./"+certi_dir+"/*."+out_format))==1, "App should have generated .png certificate"
+    assert len(glob.glob("./"+certi_dir+"/*."+out_format))>0, "App should have generated .png certificate"
 
 def test_invalid_output_format():
 
-    csv_file_name = "test_data.csv"
+    csv_file_name = "certificate_mailer/data/test_data.csv"
     certi_dir = "test_certificates"
     sign_name = "Rohan Shravan"
     course_name = "EPAi2"
@@ -540,11 +540,11 @@ def test_invalid_output_format():
     sign_name= sign_name,total_marks=total_marks,sender_email=sender_email,mail_interval=2,
     certi_dir=certi_dir,out_format=out_format,overwrite=False,create_certi_only=True,verbose=False)
 
-    assert len(glob.glob("./"+certi_dir+"/*."+out_format))==0, f"App should reject invalid image formats"
+    assert result==False, f"App should reject invalid image output formats"
 
 def test_invalid_template_reject():
     # Test if app rejects template jpg file without accompanying json file
-    csv_file_name = "test_data.csv"
+    csv_file_name = "certificate_mailer/data/test_data.csv"
     certi_dir = "test_certificates"
     sign_name = "Rohan Shravan"
     course_name = "EPAi2"

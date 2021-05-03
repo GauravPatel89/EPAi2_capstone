@@ -56,16 +56,12 @@ if __name__ == "__main__":
     parser.add_argument("-f","--out_format",type=str,default='jpg',help=".Output format ['jpg','png','bmp','pdf'] (Default: %(default)r)")
 
     parser.add_argument("-i","--interval",type=float,default=2,help="Time interval(seconds) between consecutive mails. (Default: %(default)r)")
-    
+
     parser.add_argument("-o","--overwrite",action="store_true",default=False,help="Whether to overwrite generated certificates if already exist. (Default: %(default)r)")
 
     parser.add_argument("-c","--create_certificates_only",action="store_true",default=False,help="Only create certificates don't send. (Default: %(default)r)")
 
-    
-
     parser.add_argument("-v", "--verbose", action="store_true", default=False,help= "Whether vebose message are required. (Default: %(default)r)")
-
-
 
     args = parser.parse_args()
     main(args)

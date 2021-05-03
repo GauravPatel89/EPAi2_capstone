@@ -1,0 +1,448 @@
+
+[03/05/2021, 18:13:26.575551] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_no_header.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:13:26.576884] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:26.579650] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_invalid_header.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:13:26.580026] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:26.582441] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_empty.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:13:26.582841] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:26.585246] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_invalid_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:13:26.585593] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:26.588239] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.589238] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:26.641261] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.641548] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.644969] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.645790] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:26.688140] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.688378] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.688932] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': True, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.689529] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:26.738945] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.739280] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.742629] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.743457] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:26.777976] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.778214] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.780769] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.781469] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:26.818878] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.819177] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.821975] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.822690] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:26.863709] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.863943] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:26.925108] create_n_mail_certificates - () - {'csv_file_name': 'large_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': True, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:26.925927] create_certificate - () - {'student_name': 'Annette Edwardsiedxf', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:26.967613] create_certificate returned: test_certificates/EPAi2_Annette_Edwardsiedxf_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:26.967988] create_certificate - () - {'student_name': 'Sandra Trevinokoyjk', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.012520] create_certificate returned: test_certificates/EPAi2_Sandra_Trevinokoyjk_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.012889] create_certificate - () - {'student_name': 'Teresa Weissripgj', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.058899] create_certificate returned: test_certificates/EPAi2_Teresa_Weissripgj_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.059309] create_certificate - () - {'student_name': 'Daniel Gardnerfwbkn', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.097745] create_certificate returned: test_certificates/EPAi2_Daniel_Gardnerfwbkn_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.098111] create_certificate - () - {'student_name': 'Emily Sullivantxttg', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.135207] create_certificate returned: test_certificates/EPAi2_Emily_Sullivantxttg_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.135552] create_certificate - () - {'student_name': 'Kara Carlsonnbdvy', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.169495] create_certificate returned: test_certificates/EPAi2_Kara_Carlsonnbdvy_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.169844] create_certificate - () - {'student_name': 'Jennifer Perezgfjfy', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.216943] create_certificate returned: test_certificates/EPAi2_Jennifer_Perezgfjfy_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.217410] create_certificate - () - {'student_name': 'Laura Yoderdmsdd', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.259444] create_certificate returned: test_certificates/EPAi2_Laura_Yoderdmsdd_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.259786] create_certificate - () - {'student_name': 'David Rodriguezztarp', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.298796] create_certificate returned: test_certificates/EPAi2_David_Rodriguezztarp_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.299249] create_certificate - () - {'student_name': 'Ryan Shortnzokz', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:13:27.342182] create_certificate returned: test_certificates/EPAi2_Ryan_Shortnzokz_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.342469] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.346785] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.347631] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.388776] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.389150] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.391980] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.392759] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.428198] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.428595] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.431289] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.432067] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.467192] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.467603] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.470763] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.471526] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.510052] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.510588] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.514384] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.515279] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.550669] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.551017] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.553554] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.554233] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.587387] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.587738] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.590198] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.590894] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:13:27.631153] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:13:27.631508] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.633662] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.633920] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.636263] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.636530] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.638548] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@yahoo.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.638798] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.640917] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan@Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.641209] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.643845] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan99 Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.644160] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.646953] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 0.0, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.647271] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.649983] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': -5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.650292] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.653296] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.654161] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False}
+
+[03/05/2021, 18:13:27.705196] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.pdf
+
+[03/05/2021, 18:13:27.705486] create_certificate - () - {'student_name': 'Shahrukh Khan', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False}
+
+[03/05/2021, 18:13:27.743515] create_certificate returned: test_certificates/EPAi2_Shahrukh_Khan_Rohan_Shravan.pdf
+
+[03/05/2021, 18:13:27.743790] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.828065] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.828863] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False}
+
+[03/05/2021, 18:13:27.879777] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.png
+
+[03/05/2021, 18:13:27.880421] create_certificate - () - {'student_name': 'Shahrukh Khan', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False}
+
+[03/05/2021, 18:13:27.925325] create_certificate returned: test_certificates/EPAi2_Shahrukh_Khan_Rohan_Shravan.png
+
+[03/05/2021, 18:13:27.925581] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:13:27.944742] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'txt', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.945052] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:13:27.947790] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_template': 'test_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:13:27.948048] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:03.080446] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_no_header.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:17:03.081441] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:03.083305] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_invalid_header.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:17:03.083587] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:03.085314] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_empty.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:17:03.085581] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:03.087092] create_n_mail_certificates - () - {'csv_file_name': '.data/test_data_invalid_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': './certificates', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[03/05/2021, 18:17:03.087349] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:03.089110] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.089708] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.145121] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.145425] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.148555] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.149603] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.199847] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.200223] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.200740] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': True, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.201420] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.240398] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.240648] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.243982] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.244748] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.279262] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.279492] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.282439] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.283188] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.320266] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.320507] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.322804] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.323435] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.371374] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.371659] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.419092] create_n_mail_certificates - () - {'csv_file_name': 'large_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': True, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.419990] create_certificate - () - {'student_name': 'Susan Hayesshffr', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.451948] create_certificate returned: test_certificates/EPAi2_Susan_Hayesshffr_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.452305] create_certificate - () - {'student_name': 'Evelyn Bradytqejm', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.486921] create_certificate returned: test_certificates/EPAi2_Evelyn_Bradytqejm_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.487280] create_certificate - () - {'student_name': 'Jeffery Oliverbtjsd', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.525028] create_certificate returned: test_certificates/EPAi2_Jeffery_Oliverbtjsd_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.525387] create_certificate - () - {'student_name': 'John Gonzaleztpkvl', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.561825] create_certificate returned: test_certificates/EPAi2_John_Gonzaleztpkvl_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.562185] create_certificate - () - {'student_name': 'Hannah Goodovmxo', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.595469] create_certificate returned: test_certificates/EPAi2_Hannah_Goodovmxo_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.595820] create_certificate - () - {'student_name': 'Justin Prestonhapac', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.630544] create_certificate returned: test_certificates/EPAi2_Justin_Prestonhapac_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.630928] create_certificate - () - {'student_name': 'Ronald Oconnorbwyvw', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.664172] create_certificate returned: test_certificates/EPAi2_Ronald_Oconnorbwyvw_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.664524] create_certificate - () - {'student_name': 'Lonnie Sanchezpnhls', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.697884] create_certificate returned: test_certificates/EPAi2_Lonnie_Sanchezpnhls_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.698233] create_certificate - () - {'student_name': 'Tyler Chenwxdzi', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.731150] create_certificate returned: test_certificates/EPAi2_Tyler_Chenwxdzi_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.731483] create_certificate - () - {'student_name': 'Ryan Floreswvqiw', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': True}
+
+[03/05/2021, 18:17:03.771497] create_certificate returned: test_certificates/EPAi2_Ryan_Floreswvqiw_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.771751] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.774702] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.775406] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.810384] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.810881] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.813489] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.814196] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.848633] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.848993] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.851310] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.851950] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.885940] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.886283] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.888787] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.889590] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.927463] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.927896] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.930354] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.931043] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:03.967793] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:03.968161] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:03.970542] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:03.971241] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:04.006722] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:04.007052] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:04.009561] create_n_mail_certificates - () - {'csv_file_name': 'temp_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.010174] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[03/05/2021, 18:17:04.060231] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[03/05/2021, 18:17:04.060641] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:04.063405] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.063670] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.066044] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.066282] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.068579] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@yahoo.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.068815] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.071673] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan@Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.071897] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.073751] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan99 Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.073973] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.075571] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 0.0, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.075771] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.077537] create_n_mail_certificates - () - {'csv_file_name': 'test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': -5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.077761] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.079838] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.080859] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False}
+
+[03/05/2021, 18:17:04.122612] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.pdf
+
+[03/05/2021, 18:17:04.122891] create_certificate - () - {'student_name': 'Shahrukh Khan', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'pdf', 'overwrite': False}
+
+[03/05/2021, 18:17:04.170792] create_certificate returned: test_certificates/EPAi2_Shahrukh_Khan_Rohan_Shravan.pdf
+
+[03/05/2021, 18:17:04.171113] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:04.174792] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.175619] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False}
+
+[03/05/2021, 18:17:04.236688] create_certificate returned: test_certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.png
+
+[03/05/2021, 18:17:04.237128] create_certificate - () - {'student_name': 'Shahrukh Khan', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': '/home/gp-ubuntu/Desktop/EPAi2_capstone/certificate_mailer/data/certi_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'png', 'overwrite': False}
+
+[03/05/2021, 18:17:04.283607] create_certificate returned: test_certificates/EPAi2_Shahrukh_Khan_Rohan_Shravan.png
+
+[03/05/2021, 18:17:04.283855] create_n_mail_certificates returned: True
+
+[03/05/2021, 18:17:04.286838] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_dir': 'test_certificates', 'out_format': 'txt', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.287092] create_n_mail_certificates returned: False
+
+[03/05/2021, 18:17:04.289084] create_n_mail_certificates - () - {'csv_file_name': 'certificate_mailer/data/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 2, 'certi_template': 'test_template.jpg', 'certi_dir': 'test_certificates', 'out_format': 'jpg', 'overwrite': False, 'create_certi_only': True, 'verbose': False}
+
+[03/05/2021, 18:17:04.289316] create_n_mail_certificates returned: False
