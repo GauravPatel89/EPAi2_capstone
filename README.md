@@ -42,11 +42,15 @@ It can be used as follow.
                               Directory where created certificates will be saved. (Default: './certificates')
         -f OUT_FORMAT, --out_format OUT_FORMAT
                               .Output format ['jpg','png','bmp','pdf'] (Default: 'jpg')
+        -i INTERVAL, --interval INTERVAL
+                              Time interval(seconds) between consecutive mails. (Default: 2)
         -o, --overwrite       Whether to overwrite generated certificates if already exist. (Default: False)
         -c, --create_certificates_only
                               Only create certificates don't send. (Default: False)
-        -i INTERVAL, --interval INTERVAL
-                              Time interval(seconds) between consecutive mails. (Default: 2)
         -v, --verbose         Whether vebose message are required. (Default: False)
         
-        
+- Example use:
+
+      python certificate_mailer_app.py "certificate_mailer/data/test_data.csv" "EPAi2" "Rohan Shravan" 5000 "gaurav4664.test@gmail.com" -t "certificate_mailer/data/certi_template.jpg" -d "certificates" -f 'pdf' -i 2 -o
+
+       
