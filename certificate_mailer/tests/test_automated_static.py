@@ -54,12 +54,12 @@ def test_indentations():
     files = glob.glob("./" + '/**/*.py', recursive=True)
     # Now for each of the files check if line starts with 'for' or 'while' and ends with ':'.
     for f in files:
-        #print("Testing ",f)
+        print("Testing ",f)
         with open(f) as fid:
             contents = fid.read()
             spaces = re.findall('\n +.', contents)
-            for space in spaces:
-                #print(space,len(space))
+            for i,space in enumerate(spaces):
+                print(i,space,len(space))
                 assert len(space) % 4 == 2, f"Your script contains misplaced indentations"
                 assert len(re.sub(r'[^ ]', '', space)) % 4 == 0, "Your code indentation does not follow PEP8 guidelines"    
 
@@ -124,7 +124,7 @@ def test_no_list_comprehension_used():
                 for line in fid.readlines():
                     # Remove whitespace from start and end
                     line = line.strip()
-                    assert not ((line.find('for') >=0) and line.endswith(']')),f'List comprehension found in {f}'
+                    assert not ((line.find(' for') >=0) and line.endswith(']')),f'List comprehension found in {f}'
 
 def test_function_name_had_cap_letter():
     functions = inspect.getmembers(certificate_mailer, inspect.isfunction)
@@ -161,11 +161,20 @@ def test_atleast_two_decorators_used():
                     decorator_set.add(line)
     assert len(decorator_set)>=2,"There should be atleast 2 decorators"
 
+def test_example_app_exists():
+    assert os.path.isfile("certificate_mailer_app.py"), "requirements.txt file missing!"
+
 def test_requirements_file_exists():
     assert os.path.isfile("requirements.txt"), "requirements.txt file missing!"
 
 def test_license_file_exists():
     assert os.path.isfile("LICENSE"), "LICENSE is missing!"
+
+def test_data_dir_exists():
+    assert os.path.exists("./certificate_mailer/data"), "Data directory is misssing!"
+
+def test_test_dir_exists():
+    assert os.path.exists("./certificate_mailer/tests"), "tests directory is misssing!"
 
 # TODO Every function has proper documentation
 def test_every_function_has_documentation():

@@ -14,10 +14,20 @@ from . import helpers
 __all__ = ['send_mail_with_attachment','send_mail','is_email_valid']
 
  
-def is_email_valid(email):
- 
+def is_email_valid(email:'(str)Email id to be checked'):
+    """
+    Function to check if given email id is valid.
+
+    Parameters:
+        email (str): Email id to be checked
+
+    Returns:
+        validity(bool): Email id is valid or not
+    """
+    # Create regex pattern for valid email id.
     regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
 
+    # if structure defined in regex is found email id is valid
     if(re.search(regex, email)):
         return True
     else:
@@ -26,7 +36,29 @@ def is_email_valid(email):
 
 @helpers.internet_check_decorator()
 @helpers.log_decorator('certificate_mailer.log')
-def send_mail_with_attachment(subject,body,receiver_email,sender_email,password,attachment_file=None,verbose=False):
+def send_mail_with_attachment(subject:'(str)Email subject text',
+                            body:'(str)Email body text',
+                            receiver_email:'(str)Receiver email id',
+                            sender_email:'(str)Sender email id',
+                            password:'(obj)PasswordHelper object',
+                            attachment_file:'(str)Attachment file'=None,
+                            verbose:'(str)Verbose'=False):
+    """
+    Function compiles an email with given subject, body and attachment file and
+    sends it to receiver email id using sender's credentials.
+
+    Parameters:
+        subject(str):Email subject text
+        body(str):Email body text
+        receiver_email(str):Receiver email id
+        sender_email(str):Sender email id
+        password(obj):PasswordHelper object
+        attachment_file(str):Attachment file
+        verbose(str):Verbose
+    Returns:
+        None
+    """
+
     try:
         if (not attachment_file) or (not os.path.exists(attachment_file)):
             print(f'Attachment file: {attachment_file} does not exist. Can\'t send the mail.')
@@ -75,7 +107,26 @@ def send_mail_with_attachment(subject,body,receiver_email,sender_email,password,
 
 @helpers.internet_check_decorator()
 @helpers.log_decorator('certificate_mailer.log')
-def send_mail(subject,body,receiver_email,sender_email,password):
+def send_mail(subject:'(str) Email subject text',
+                body:'(str) Email body text',
+                receiver_email:'(str) Receiver email id',
+                sender_email:'(str) Sender email id',
+                password:'(obj) PasswordHelper object',
+                verbose:'(bool)'=False):
+    """
+    Function compiles an email with given subject, body and attachment file and
+    sends it to receiver email id using sender's credentials.
+
+    Parameters:
+        subject(str):Email subject text
+        body(str):Email body text
+        receiver_email(str):Receiver email id
+        sender_email(str):Sender email id
+        password(obj):PasswordHelper object
+        verbose(str):Verbose
+    Returns:
+        None
+    """
     try:
         message = f"""\
     Subject: {subject}
