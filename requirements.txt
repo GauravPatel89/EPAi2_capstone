@@ -1,2 +1,4 @@
-nose
-sphinx
+pytest
+opencv-python
+Faker 
+img2pdf

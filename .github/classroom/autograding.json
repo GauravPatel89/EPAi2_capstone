@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "test_capstone",
-      "setup": "sudo -H pip3 install pytest opencv-python Faker",
+      "setup": "sudo -H pip3 install -r requirements.txt",
       "run": "pytest -vv",
       "input": "",
       "output": "",
