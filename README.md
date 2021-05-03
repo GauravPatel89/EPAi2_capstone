@@ -53,7 +53,9 @@ It can be used as follow.
 
       python certificate_mailer_app.py "certificate_mailer/data/test_data.csv" "EPAi2" "Rohan Shravan" 5000 "gaurav4664.test@gmail.com" -t "certificate_mailer/data/certi_template.jpg" -d "certificates" -f 'pdf' -i 2 -o
       
-![certificate_sender_app_gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/assets/certi_sender_app.gif)
+  Example use is illustrated in the aniation below.
+  
+  ![certificate_sender_app_gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/assets/certi_sender_app.gif)
 
 
 - User Defined templates:  
@@ -66,7 +68,11 @@ It can be used as follow.
 
       python template_helper.py "template_file.jpg"      
       
+ This will load a GUI with user defined template image. User must click points on the image as per instructions shown on the right side of the GUI. 
+ points. The template_helper app will generate a json file with field coordinates. User must keep template image file and template json file in the same directory while using certificate_mailer app.
  
+ Entire process is illustrated in the animation below. 
+
 
  ![template_helper_gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/assets/template_helper.gif)
 
