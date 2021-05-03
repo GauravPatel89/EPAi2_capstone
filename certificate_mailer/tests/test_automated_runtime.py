@@ -215,7 +215,7 @@ def test_course_name_in_certificate_name():
 def test_app_handles_large_data():
     # Since sending so many mails is not feasible. We will just test whether app is
     # able to generate more than 1000 student certificate.
-    num_students = 10
+    num_students = 1000
     # lets first create a csv file containing 1001 fake student data
     with open('large_data.csv',"w") as f:
         writer = csv.writer(f)
