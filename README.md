@@ -54,4 +54,11 @@ It can be used as follow.
       python certificate_mailer_app.py "certificate_mailer/data/test_data.csv" "EPAi2" "Rohan Shravan" 5000 "gaurav4664.test@gmail.com" -t "certificate_mailer/data/certi_template.jpg" -d "certificates" -f 'pdf' -i 2 -o
 
 - How to use user defined certificate template:  
-This repo comes with a default certificate template [certi_template.jpg](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.jpg). If user needs to use some other certificate template, she needs to provide a json file containing coordinates of different certificate fields. User can manually create this json file as shown in this [certi_template.json](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.json) default template file. Other option is to use template_helper.
+This repo comes with a default certificate template [certi_template.jpg](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.jpg). If user needs to use some other certificate template, she needs to provide a json file containing coordinates of different certificate fields. User can manually create this json file as shown in [certi_template.json](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer/data/certi_template.json) default template file. 
+
+User can use use template_helper to generate template json file.
+
+Call template_helper
+
+      
+
