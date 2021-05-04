@@ -1,0 +1,142 @@
+
+[04/05/2021, 17:24:36.946976] create_n_mail_certificates - () - {'csv_file_name': 'Results/test_data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000.0, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 1.0, 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[04/05/2021, 17:24:36.948181] create_n_mail_certificates returned: False
+
+[04/05/2021, 17:25:09.887052] create_n_mail_certificates - () - {'csv_file_name': 'Results/data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000.0, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 1.0, 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[04/05/2021, 17:25:42.706345] create_n_mail_certificates - () - {'csv_file_name': 'Results/data.csv', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'total_marks': 5000.0, 'sender_email': 'gaurav4664.test@gmail.com', 'mail_interval': 1.0, 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False, 'create_certi_only': False, 'verbose': False}
+
+[04/05/2021, 17:25:48.456565] create_certificate - () - {'student_name': 'Gaurav Patel', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:25:48.456902] create_certificate returned: Results/certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+
+[04/05/2021, 17:25:48.457088] mail_the_certificate - () - {'student_name': 'Gaurav Patel', 'student_score': '4500', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg', 'receiver_email': 'gaurav4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:25:48.457371] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Gaurav Patel,\nCongratulations! You have cleared the EPAi2 with 4500 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:25:53.202170] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:25:53.202647] mail_the_certificate returned: None
+
+[04/05/2021, 17:25:54.204368] create_certificate - () - {'student_name': 'Sachin Tendulkar', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:25:54.432730] create_certificate returned: Results/certificates/EPAi2_Sachin_Tendulkar_Rohan_Shravan.jpg
+
+[04/05/2021, 17:25:54.432998] mail_the_certificate - () - {'student_name': 'Sachin Tendulkar', 'student_score': '4000', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Sachin_Tendulkar_Rohan_Shravan.jpg', 'receiver_email': 'g.aurav4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:25:54.433160] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Sachin Tendulkar,\nCongratulations! You have cleared the EPAi2 with 4000 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'g.aurav4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Sachin_Tendulkar_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:25:58.428562] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:25:58.429091] mail_the_certificate returned: None
+
+[04/05/2021, 17:25:59.430415] create_certificate - () - {'student_name': 'Sourav Ganguli', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:25:59.430832] create_certificate returned: Results/certificates/EPAi2_Sourav_Ganguli_Rohan_Shravan.jpg
+
+[04/05/2021, 17:25:59.431009] mail_the_certificate - () - {'student_name': 'Sourav Ganguli', 'student_score': '4100', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Sourav_Ganguli_Rohan_Shravan.jpg', 'receiver_email': 'ga.urav4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:25:59.431185] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Sourav Ganguli,\nCongratulations! You have cleared the EPAi2 with 4100 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'ga.urav4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Sourav_Ganguli_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:03.182685] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:03.182905] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:04.184315] create_certificate - () - {'student_name': 'Rahul Dravid', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:04.184549] create_certificate returned: Results/certificates/EPAi2_Rahul_Dravid_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:04.184693] mail_the_certificate - () - {'student_name': 'Rahul Dravid', 'student_score': '4200', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Rahul_Dravid_Rohan_Shravan.jpg', 'receiver_email': 'gau.rav4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:04.184814] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Rahul Dravid,\nCongratulations! You have cleared the EPAi2 with 4200 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gau.rav4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Rahul_Dravid_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:07.908593] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:07.909204] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:08.911052] create_certificate - () - {'student_name': 'Vvs Laxman', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:08.912669] create_certificate returned: Results/certificates/EPAi2_Vvs_Laxman_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:08.913095] mail_the_certificate - () - {'student_name': 'Vvs Laxman', 'student_score': '4000', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Vvs_Laxman_Rohan_Shravan.jpg', 'receiver_email': 'gaur.av4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:08.913386] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Vvs Laxman,\nCongratulations! You have cleared the EPAi2 with 4000 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaur.av4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Vvs_Laxman_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:12.708354] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:12.708633] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:13.710173] create_certificate - () - {'student_name': 'Virendra Sehwag', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:13.710789] create_certificate returned: Results/certificates/EPAi2_Virendra_Sehwag_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:13.711133] mail_the_certificate - () - {'student_name': 'Virendra Sehwag', 'student_score': '3500', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Virendra_Sehwag_Rohan_Shravan.jpg', 'receiver_email': 'gaura.v4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:13.711540] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Virendra Sehwag,\nCongratulations! You have cleared the EPAi2 with 3500 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaura.v4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Virendra_Sehwag_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:17.403688] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:17.404073] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:18.405654] create_certificate - () - {'student_name': 'Virat Kohli', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:18.405884] create_certificate returned: Results/certificates/EPAi2_Virat_Kohli_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:18.406016] mail_the_certificate - () - {'student_name': 'Virat Kohli', 'student_score': '3800', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Virat_Kohli_Rohan_Shravan.jpg', 'receiver_email': 'gaurav.4664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:18.406138] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Virat Kohli,\nCongratulations! You have cleared the EPAi2 with 3800 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav.4664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Virat_Kohli_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:22.144492] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:22.144769] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:23.146253] create_certificate - () - {'student_name': 'Rohit Sharma', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:23.146849] create_certificate returned: Results/certificates/EPAi2_Rohit_Sharma_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:23.147390] mail_the_certificate - () - {'student_name': 'Rohit Sharma', 'student_score': '3900', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Rohit_Sharma_Rohan_Shravan.jpg', 'receiver_email': 'gaurav4.664@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:23.147840] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Rohit Sharma,\nCongratulations! You have cleared the EPAi2 with 3900 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav4.664@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Rohit_Sharma_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:27.218618] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:27.218836] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:28.220265] create_certificate - () - {'student_name': 'Mahendra Singh Dhoni', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:28.220651] create_certificate returned: Results/certificates/EPAi2_Mahendra_Singh_Dhoni_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:28.220906] mail_the_certificate - () - {'student_name': 'Mahendra Singh Dhoni', 'student_score': '4600', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Mahendra_Singh_Dhoni_Rohan_Shravan.jpg', 'receiver_email': 'gaurav46.64@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:28.221153] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Mahendra Singh Dhoni,\nCongratulations! You have cleared the EPAi2 with 4600 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav46.64@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Mahendra_Singh_Dhoni_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:31.876171] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:31.876552] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:32.878093] create_certificate - () - {'student_name': 'Gautam Gambhir', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:32.916558] create_certificate returned: Results/certificates/EPAi2_Gautam_Gambhir_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:32.916815] mail_the_certificate - () - {'student_name': 'Gautam Gambhir', 'student_score': '3700', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Gautam_Gambhir_Rohan_Shravan.jpg', 'receiver_email': 'gaurav466.4@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:32.916973] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Gautam Gambhir,\nCongratulations! You have cleared the EPAi2 with 3700 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav466.4@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Gautam_Gambhir_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:36.847672] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:36.847940] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:37.849397] create_certificate - () - {'student_name': 'Anil Kumble', 'course_name': 'EPAi2', 'sign_name': 'Rohan Shravan', 'certi_template': 'Results/certi_template.jpg', 'certi_dir': 'Results/certificates', 'out_format': 'jpg', 'overwrite': False}
+
+[04/05/2021, 17:26:37.889327] create_certificate returned: Results/certificates/EPAi2_Anil_Kumble_Rohan_Shravan.jpg
+
+[04/05/2021, 17:26:37.889781] mail_the_certificate - () - {'student_name': 'Anil Kumble', 'student_score': '3400', 'course_name': 'EPAi2', 'total_marks': 5000.0, 'sign_name': 'Rohan Shravan', 'certificate_path': 'Results/certificates/EPAi2_Anil_Kumble_Rohan_Shravan.jpg', 'receiver_email': 'gaurav4664.@gmail.com', 'sender_email': 'gaurav4664.test@gmail.com', 'password': <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>, 'verbose': False}
+
+[04/05/2021, 17:26:37.889972] send_mail_with_attachment - ('Course completion certificate: EPAi2', 'Dear Anil Kumble,\nCongratulations! You have cleared the EPAi2 with 3400 marks out of 5000.0! \nWe are excited to share the attached Award of Excellence for your performance!\nRegards\nRohan Shravan', 'gaurav4664.@gmail.com', 'gaurav4664.test@gmail.com', <certificate_mailer.helpers.PasswordHelper object at 0x7f1c52519310>) - {'attachment_file': 'Results/certificates/EPAi2_Anil_Kumble_Rohan_Shravan.jpg', 'verbose': False}
+
+[04/05/2021, 17:26:41.610768] send_mail_with_attachment returned: None
+
+[04/05/2021, 17:26:41.611058] mail_the_certificate returned: None
+
+[04/05/2021, 17:26:42.612306] create_n_mail_certificates returned: True

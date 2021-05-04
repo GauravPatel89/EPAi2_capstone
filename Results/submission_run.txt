@@ -1,0 +1,69 @@
+python certificate_mailer_app.py "Results/data.csv" "EPAi2" "Rohan Shravan" 5000 "gaurav4664.test@gmail.com" -t "Results/certi_template.jpg" -d "Results/certificates" -f 'jpg' -i 1
+
+
+Please Enter Password for gaurav4664.test@gmail.com...
+------------------------------
+Student: Name:Gaurav Patel	 Score:4500	Email:gaurav4664@gmail.com
+Certificate EPAi2_Gaurav_Patel_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Gaurav_Patel_Rohan_Shravan.jpg
+Sending mail to Gaurav Patel(gaurav4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Sachin Tendulkar	 Score:4000	Email:g.aurav4664@gmail.com
+Generated certificate: Results/certificates/EPAi2_Sachin_Tendulkar_Rohan_Shravan.jpg
+Sending mail to Sachin Tendulkar(g.aurav4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Sourav Ganguli	 Score:4100	Email:ga.urav4664@gmail.com
+Certificate EPAi2_Sourav_Ganguli_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Sourav_Ganguli_Rohan_Shravan.jpg
+Sending mail to Sourav Ganguli(ga.urav4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Rahul Dravid	 Score:4200	Email:gau.rav4664@gmail.com
+Certificate EPAi2_Rahul_Dravid_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Rahul_Dravid_Rohan_Shravan.jpg
+Sending mail to Rahul Dravid(gau.rav4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Vvs Laxman	 Score:4000	Email:gaur.av4664@gmail.com
+Certificate EPAi2_Vvs_Laxman_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Vvs_Laxman_Rohan_Shravan.jpg
+Sending mail to Vvs Laxman(gaur.av4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Virendra Sehwag	 Score:3500	Email:gaura.v4664@gmail.com
+Certificate EPAi2_Virendra_Sehwag_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Virendra_Sehwag_Rohan_Shravan.jpg
+Sending mail to Virendra Sehwag(gaura.v4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Virat Kohli	 Score:3800	Email:gaurav.4664@gmail.com
+Certificate EPAi2_Virat_Kohli_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Virat_Kohli_Rohan_Shravan.jpg
+Sending mail to Virat Kohli(gaurav.4664@gmail.com)...
+Done
+------------------------------
+Student: Name:Rohit Sharma	 Score:3900	Email:gaurav4.664@gmail.com
+Certificate EPAi2_Rohit_Sharma_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Rohit_Sharma_Rohan_Shravan.jpg
+Sending mail to Rohit Sharma(gaurav4.664@gmail.com)...
+Done
+------------------------------
+Student: Name:Mahendra Singh Dhoni	 Score:4600	Email:gaurav46.64@gmail.com
+Certificate EPAi2_Mahendra_Singh_Dhoni_Rohan_Shravan.jpg already exists!!! Not creating new....
+Generated certificate: Results/certificates/EPAi2_Mahendra_Singh_Dhoni_Rohan_Shravan.jpg
+Sending mail to Mahendra Singh Dhoni(gaurav46.64@gmail.com)...
+Done
+------------------------------
+Student: Name:Gautam Gambhir	 Score:3700	Email:gaurav466.4@gmail.com
+Generated certificate: Results/certificates/EPAi2_Gautam_Gambhir_Rohan_Shravan.jpg
+Sending mail to Gautam Gambhir(gaurav466.4@gmail.com)...
+Done
+------------------------------
+Student: Name:Anil Kumble	 Score:3400	Email:gaurav4664.@gmail.com
+Generated certificate: Results/certificates/EPAi2_Anil_Kumble_Rohan_Shravan.jpg
+Sending mail to Anil Kumble(gaurav4664.@gmail.com)...
+Done
+------------------------------
+Success!!!
