@@ -4,6 +4,11 @@
 
 This project implements a certificate generation and mailing app. User has to provide a csv file containing student data (name,score,email id etc). The app will generate a certificate for all the students using user selecteable certificate template and mail it to their respective email ids.
 
+### Submission:
+The final submission output can be found in [Results](https://github.com/GauravPatel89/EPAi2_capstone/tree/main/Results) directory. [Application](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/certificate_mailer_app.py) was run on [data.csv](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/Results/data.csv) file. Generated certificates were stored in [certificates](https://github.com/GauravPatel89/EPAi2_capstone/tree/main/Results/certificates) directory. The certificates were also mailed to student email ids. Screenshots showing the gmail inbox can be found here([1](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/Results/Submission_Screenshot1.png),[2](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/Results/Submission_Screenshot2.png),[3](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/Results/Submission_Screenshot3.png)). This submission run is shown below. 
+
+![submission1.gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/Results/submission1.gif)
+
 #### Installation:  
 
 1.Clone the repository  
@@ -56,7 +61,18 @@ It can be used as follow.
   Example use is illustrated in the aniation below.
   
   ![certificate_sender_app_gif](https://github.com/GauravPatel89/EPAi2_capstone/blob/main/assets/certi_sender_app.gif)
+  
+  As shown above user can provide option as per her requirements. The app will ask for password for sender mail once. It will then create certificates for each of the students in the data file and send these certificates along with appropriate message and subject to the students.
 
+- Valid data file format:
+
+ The user data to be processed is provided to the app in the form of a csv file. User must keep in mind following points while creating the csv data file.
+ 1. Data file must have its first line as header. Data file without header will be rejected.
+ 2. Data file header must have atleast "Name","Score" and "Email" as fields. Data files without these fields will be rejeced.
+ 3. Data file must have appropriate number of data points in each row as there are fields in the header.
+ 4. Student name cannot have numeric or special characers.
+ 5. student score cannot be more than total score in the course
+ 6. Student email id must be valid email id.
 
 ##### User Defined templates:  
 
