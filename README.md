@@ -131,7 +131,15 @@ This function composes an email with *subject* and *body*. It then sends it to *
 
 #### helpers
 
-1. is_internet_connected():
+1. is_internet_connected()
 
 This function checks if internet connection is available.
+
+2. log_decorator(log_file_name:'str')
+
+This is a decorator funcion. It logs function call and its return value for the function it decorates into *log_file_name*.
+
+3. internet_check_decorator()
+
+This is a decorator function which checks if internet is connected before running a function it decorates.
 
