@@ -58,11 +58,15 @@ def send_mail_with_attachment(subject:'(str)Email subject text',
     Returns:
         None
     """
-
+    if verbose:
+        print("send_mail_with_attachment:")
     try:
         if (not attachment_file) or (not os.path.exists(attachment_file)):
             print(f'Attachment file: {attachment_file} does not exist. Can\'t send the mail.')
             raise FileNotFoundError
+
+        if verbose:
+            print("Creating email message")
         # Create a multipart message and set headers
         message = MIMEMultipart()
         message["From"] = sender_email
@@ -72,6 +76,8 @@ def send_mail_with_attachment(subject:'(str)Email subject text',
         # Add body to email
         message.attach(MIMEText(body, "plain"))
 
+        if verbose:
+            print("Attaching ",attachment_file)
         # Open PDF file in binary mode
         with open(attachment_file, "rb") as attachment:
             # Add file as application/octet-stream

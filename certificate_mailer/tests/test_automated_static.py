@@ -176,6 +176,9 @@ def test_data_dir_exists():
 def test_test_dir_exists():
     assert os.path.exists("./certificate_mailer/tests"), "tests directory is misssing!"
 
+def test_result_dir_exists():
+    assert os.path.exists("./Results"), "Results directory is misssing!"    
+
 # TODO Every function has proper documentation
 def test_every_function_has_documentation():
     list_functions = inspect.getmembers(certificate_mailer,inspect.isfunction)
